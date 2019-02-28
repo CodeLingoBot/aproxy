@@ -51,7 +51,7 @@ func (self *AuthorityResource) Get(ctx *rfweb.Context) {
 	util.WriteJson(ctx.W, res)
 }
 
-// add new authority
+// Post adds new authority
 func (self *AuthorityResource) Post(ctx *rfweb.Context) {
 	res := RespData{}
 	authority, err := getAuthorityFromBody(ctx.R)

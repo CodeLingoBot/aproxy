@@ -40,7 +40,7 @@ func (self *RoleResource) Get(ctx *rfweb.Context) {
 	util.WriteJson(ctx.W, res)
 }
 
-// add new role
+// Post adds new role
 func (self *RoleResource) Post(ctx *rfweb.Context) {
 	res := RespData{}
 	role, err := getRoleFromBody(ctx.R)

@@ -7,7 +7,7 @@ import (
 	"aproxy/module/constant"
 )
 
-// check permission, return error code:
+// CheckPermission checks permission, return error code:
 //     0: ok
 //     1: need login
 //     2: do not has permission

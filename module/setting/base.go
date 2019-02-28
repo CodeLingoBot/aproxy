@@ -27,7 +27,7 @@ type BaseResource struct {
 	rfweb.BaseResource
 }
 
-// check permission
+// OnHandleBegin checks permission
 func (self *BaseResource) OnHandleBegin(ctx *rfweb.Context) bool {
 	user := auth.GetLoginedUser(ctx)
 	errMsg := ""

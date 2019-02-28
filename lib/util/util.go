@@ -16,7 +16,7 @@ func DecodeJsonBody(r io.ReadCloser, to interface{}) error {
 	return err
 }
 
-// return json string result
+// WriteJson returns json string result
 // WriteJson(obj) or WriteJson(obj, "text/html")
 func WriteJson(w http.ResponseWriter, data interface{}, contentType ...string) {
 	var ct string

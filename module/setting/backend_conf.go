@@ -41,7 +41,7 @@ func (self *BackendConfResource) Get(ctx *rfweb.Context) {
 	util.WriteJson(ctx.W, res)
 }
 
-// add new backend config
+// Post adds new backend config
 func (self *BackendConfResource) Post(ctx *rfweb.Context) {
 	res := RespData{}
 	bc, err := getBackendConfFromBody(ctx.R)

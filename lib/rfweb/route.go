@@ -93,7 +93,7 @@ func (rt *RouteTable) AddRoute(route *Route) {
 	rt.Routes = append(rt.Routes, route)
 }
 
-// add a new route
+// Map adds a new route
 func (rt *RouteTable) Map(url string, resource Resourcer) {
 
 	route := &Route{
